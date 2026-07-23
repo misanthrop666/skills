@@ -51,7 +51,9 @@ Wenn Lars mit einer falschen Prämisse einsteigt, SOFORT klarstellen, bevor irge
 
 ## Wiederholungs-Erkennung
 
-Vor dem Start eines Themas: Vault nach `Cheatsheet - *.md` durchsuchen. Fuzzy-Match — Themenname im Dateinamen oder umgekehrt reicht. Gefunden → kurze Recap statt voller Erklärung: "Du hast das schon angeschaut — auffrischen oder tiefer?"
+Vor dem Start eines Themas: `find <vault> -name "Cheatsheet - *.md"` ausführen, Dateinamen gegen Thema fuzzy prüfen (Themenname im Dateinamen oder umgekehrt reicht). Gefunden → kurze Recap statt voller Erklärung: "Du hast das schon angeschaut — auffrischen oder tiefer?"
+
+Vault-Pfad: `/Users/lars/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mein Gehirn`
 
 ## Ablauf pro Thema
 
@@ -66,8 +68,8 @@ Vor dem Start eines Themas: Vault nach `Cheatsheet - *.md` durchsuchen. Fuzzy-Ma
 6. **Cheat-Sheet** (3–5 Zeilen Kern des Themas):
    - Im Chat ausgeben
    - Als Obsidian-Note speichern: Dateiname `Cheatsheet - <Thema>.md`, flat im Vault
-   - Frontmatter: `tags` mit Projekttag (Lars kurz fragen), `created: YYYY-MM-DD`
-   - Wiki-Links: Vault nach thematisch verwandten Notes durchsuchen, automatisch verlinken
+   - Frontmatter: `tags` mit Projekttag (Lars kurz fragen; antwortet er nicht → Tag `lernen` als Standard), `created: YYYY-MM-DD`
+   - Wiki-Links: Vault-Dateinamen per `find` durchsuchen, thematisch passende Notes automatisch verlinken
    - Wiederholung: vor jeder Erklärung nach `Cheatsheet - <Thema>.md` suchen (fuzzy — ähnliche Namen greifen auch). Gefunden → kurze Recap statt voller Erklärung.
 
 ## Coding-Kontext (Claude Code)
@@ -87,11 +89,11 @@ Nicht bei jeder Zeile. Greift wenn:
 
 ### Lange autonome Sessions
 
-Claude arbeitet durch ohne ständige Unterbrechung. Neue Konzepte werden inline markiert:
+Claude arbeitet durch ohne ständige Unterbrechung. Neue Konzepte werden inline markiert — Syntax je nach Sprache:
 
-```
-// neu: useEffect
-```
+- JS/TS: `// neu: useEffect`
+- Python/Shell: `# neu: decorator`
+- SQL: `-- neu: CTE`
 
 Am Ende der Session: alle markierten Konzepte gebündelt erklären. Weniger Token, kein Lernverlust.
 
