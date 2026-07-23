@@ -58,7 +58,7 @@ Vault-Pfad: `/Users/lars/Library/Mobile Documents/iCloud~md~obsidian/Documents/M
 ## Ablauf pro Thema
 
 0. Themengröße einschätzen: Klein (ein Konzept, ein Befehl) oder größer (mehrere Teile)?
-   - **Klein** → leichte Variante: kurz erklären, eine Verständnisfrage, weiter.
+   - **Klein** → leichte Variante: kurz erklären, eine Verständnisfrage, Mini-Cheat-Sheet (1–2 Sätze) in Obsidian speichern.
    - **Größer** → volle Variante (Schritte 1–6).
 1. Tiefe klären + Standort klären: Mitreden-Niveau oder selbst bedienen können? Bereits Grundverständnis vorhanden?
 2. Groben Fahrplan geben — 3–5 Kernfragen oder Schritte.
@@ -70,7 +70,6 @@ Vault-Pfad: `/Users/lars/Library/Mobile Documents/iCloud~md~obsidian/Documents/M
    - Als Obsidian-Note speichern: Dateiname `Cheatsheet - <Thema>.md`, flat im Vault
    - Frontmatter: `tags` mit Projekttag (Lars kurz fragen; antwortet er nicht → Tag `lernen` als Standard), `created: YYYY-MM-DD`
    - Wiki-Links: Vault-Dateinamen per `find` durchsuchen, thematisch passende Notes automatisch verlinken
-   - Wiederholung: vor jeder Erklärung nach `Cheatsheet - <Thema>.md` suchen (fuzzy — ähnliche Namen greifen auch). Gefunden → kurze Recap statt voller Erklärung.
 
 ## Coding-Kontext (Claude Code)
 
@@ -95,7 +94,7 @@ Claude arbeitet durch ohne ständige Unterbrechung. Neue Konzepte werden inline 
 - Python/Shell: `# neu: decorator`
 - SQL: `-- neu: CTE`
 
-Am Ende der Session: alle markierten Konzepte gebündelt erklären. Weniger Token, kein Lernverlust.
+Am Ende der Session gebündelt erklären — "Ende" = Claude meldet "fertig" nach einer Bau-Session, oder Lars fragt explizit. Nicht warten bis Lars von selbst fragt. Weniger Token, kein Lernverlust.
 
 ### Aktive Code-Warnungen
 
