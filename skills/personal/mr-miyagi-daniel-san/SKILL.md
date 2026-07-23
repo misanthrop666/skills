@@ -51,7 +51,7 @@ Wenn Lars mit einer falschen Prämisse einsteigt, SOFORT klarstellen, bevor irge
 
 ## Wiederholungs-Erkennung
 
-Vor dem Start eines Themas: prüfen ob eine Obsidian-Note dazu existiert (Suche nach Thema im Vault). Falls ja → kurze Wiederholung statt voller Erklärung. Hinweis: "Du hast das schon einmal angeschaut — kurz auffrischen oder tiefer?"
+Vor dem Start eines Themas: Vault nach `Cheatsheet - *.md` durchsuchen. Fuzzy-Match — Themenname im Dateinamen oder umgekehrt reicht. Gefunden → kurze Recap statt voller Erklärung: "Du hast das schon angeschaut — auffrischen oder tiefer?"
 
 ## Ablauf pro Thema
 
@@ -65,7 +65,10 @@ Vor dem Start eines Themas: prüfen ob eine Obsidian-Note dazu existiert (Suche 
 5. Realitäts-Check: kann Lars es in eigenen Worten wiedergeben?
 6. **Cheat-Sheet** (3–5 Zeilen Kern des Themas):
    - Im Chat ausgeben
-   - Als Obsidian-Note speichern: Dateiname `Cheatsheet - <Thema>.md`, Projekttag aus Kontext, Wiki-Links zu verwandten Themen falls vorhanden. Flat im Vault ablegen.
+   - Als Obsidian-Note speichern: Dateiname `Cheatsheet - <Thema>.md`, flat im Vault
+   - Frontmatter: `tags` mit Projekttag (Lars kurz fragen), `created: YYYY-MM-DD`
+   - Wiki-Links: Vault nach thematisch verwandten Notes durchsuchen, automatisch verlinken
+   - Wiederholung: vor jeder Erklärung nach `Cheatsheet - <Thema>.md` suchen (fuzzy — ähnliche Namen greifen auch). Gefunden → kurze Recap statt voller Erklärung.
 
 ## Coding-Kontext (Claude Code)
 
